@@ -1,0 +1,20 @@
+{
+    "items": [
+       {
+          "title": "Christmas Image 1",
+          "url": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+       },
+       {
+          "title": "Christmas Image 2",
+          "url": "images/christmas2.jpg"
+       },
+       {
+          "title": "Christmas Image 3",
+          "url": "images/christmas3.jpg"
+       },
+       {
+          "title": "Christmas Image 4",
+          "url": "images/christmas4.jpg"
+       }
+    ]
+ }

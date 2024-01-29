@@ -1,0 +1,78 @@
+<!doctype html>
+<html amp lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <script async src = "https://cdn.ampproject.org/v0.js"></script>
+      <title>Google AMP - Amp List</title>
+      <link rel = "canonical" href = "http://example.ampproject.org/article-metadata.html">
+      <meta name = "viewport" content = "width = device-width,minimum-scale = 1,initial-scale = 1">
+      
+      <style amp-boilerplate>
+         body{
+            -webkit-animation:
+            -amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:
+            -amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:
+            -amp-start 8s steps(1,end) 0s 1 normal both;animation:
+            -amp-start 8s steps(1,end) 0s 1 normal both
+         }
+         @-webkit-keyframes 
+         -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes 
+         -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes 
+         -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes 
+         -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes 
+         -amp-start{from{visibility:hidden}to{visibility:visible}}
+      </style>
+      
+      <noscript>
+         <style amp-boilerplate>
+            body{
+               -webkit-animation:none;
+               -moz-animation:none;
+               -ms-animation:none;
+               animation:none}
+         </style>
+      </noscript>
+   
+      <script async custom-element = "amp-list" 
+         src = "https://cdn.ampproject.org/v0/amp-list-0.1.js">
+      </script>
+   
+      <script async custom-template = "amp-mustache" 
+         src = "https://cdn.ampproject.org/v0/amp-mustache-0.2.js">
+      </script>
+   
+      <style amp-custom>
+         amp-img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+         }
+         button{
+            background-color: #ACAD5C; 
+            color: white; 
+            padding: 12px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            float: right;
+         }
+      </style>
+   </head>
+   <body>
+      <h3>Google AMP - Amp List</h3>
+      <button on = "tap:amplist.refresh">Refresh Images</button>
+      
+      <amp-list id = "amplist" width = "auto" height = "100" 
+         layout = "fixed-height" src = "amplist.json" class = "m1">
+      <template type = "amp-mustache">
+         <div class = "images_for_display">
+            <amp-img width = "150"
+               height = "100"
+               alt = "{{title}}"
+               src = "{{url}}"></amp-img>
+            <h1>something</h1>
+         </div>
+      </template>
+      </amp-list>
+   </body>
+</html>
